@@ -2,8 +2,9 @@ const CardComponent=(props)=>{
     
     const{image,title,category,price,discription,height,width}=props
     return(
+      <div>
         <div  className="card" style={{ width: "15rem" ,
-        display :'flex', alignItems:'center',justifyContent:'space-between',margin:'20px',padding:'25px'
+        display :'flex',  alignItems:'center',justifyContent:'space-between',margin:'20px',padding:'25px'
         }}>
   <img  src={image} height={220} width={100}  className="card-img-top" alt="..." />
   <div className="card-body">
@@ -19,6 +20,7 @@ const CardComponent=(props)=>{
 
     
   </div>
+</div>
 </div>
 
     )

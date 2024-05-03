@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-import CardComponent from './products/fakecard.js';
+import CardComponent from "./products/fakecard.js";
 // import Greet from './components/Greet.js';
 // import Buttonsin  from './components/button.js';
 // import Imagess from './components/image.js';
@@ -17,15 +17,12 @@ import CardComponent from './products/fakecard.js';
 // import Heading from './components/heading/heading.js';
 // // import Arr from './components/23-map/map.js';
 // import One from './components/24-4-MFR.js/classcompo/class.js';
- import Cards from './components/card/card.js';
+import Cards from "./components/card/card.js";
 // import Cr from './components/carousal/carousal.js';
 
-import { May2 } from './props-function/funprops';
+import { May2 } from "./props-function/funprops";
 function App() {
-
- 
-
-  const product=[
+  const product = [
     {
       id: 1,
       title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -232,40 +229,40 @@ function App() {
       image: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
       rating: { rate: 3.6, count: 145 },
     },
-  ]
+  ];
 
-    
-   
-   
-    return (
-         <div>{
-
-          
-product.map((eachproduct)=>{
-            const{title,price,image,category,id,description,width,height}=eachproduct
-            return(
-              
-              
-
-                  <CardComponent
-                  key={id}
-                  title={title}
-                  price={price}
-                  image={image}
-                  category={category}
-                  description={description}
-                  width={width}
-                  height={height}
-/>
-              
-              
-              
-             
-            )
-      
-          })
-
-    }</div>
+  return (
+    <div style={
+      {
+        display:"flex",
+        flexWrap:"wrap"
+      }
+    }>
+      {product.map((eachproduct) => {
+        const {
+          title,
+          price,
+          image,
+          category,
+          id,
+          description,
+          width,
+          height,
+        } = eachproduct;
+        return (
+          <CardComponent
+            key={id}
+            title={title}
+            price={price}
+            image={image}
+            category={category}
+            description={description}
+            width={width}
+            height={height}
+          />
+        );
+      })}
+    </div>
   );
 }
 
