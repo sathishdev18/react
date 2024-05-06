@@ -38,7 +38,7 @@ export class Items extends Component {
     switch (add) {
       case "increment":
         const incre = this.state.product.map((val) => {
-          if (val.id == id) {
+          if (val.id === id) {
             val.count += 1;
             return val;
           } else {
