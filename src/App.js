@@ -1,4 +1,6 @@
 import Timer from "./FunctionalComponent/Timer";
+import Loginn from "./FunctionalComponent/forms/log.js";
+
 
 
 function App() {
@@ -6,7 +8,7 @@ function App() {
 
   return (
    
-    <Timer/>
+ <Loginn/>
    
   )
     }
