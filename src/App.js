@@ -1,17 +1,38 @@
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "./Routing/Home";
+import Service from "./Routing/Service";
+import About from "./Routing/About";
 
-import Timer from "./FunctionalComponent/Timer";
-import Loginn from "./FunctionalComponent/forms/log.js";
-import UseEffect1 from "./useEffect/useEffect1.js";
-import Pagination from "./Pagination/page.js";
-
+function Header(){
+  return(
+    <ul style={{
+      display:"flex",
+      justifyContent:"center",
+      alignItems:"center",
+      gap:"50px",
+      
+    }}>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/service">Service</Link></li>
+      <li><Link to="/about">About</Link></li>
+    </ul>
+  )
+}
 
 
 function App() {
   
 
   return (
-   
-   < Pagination/>
+   <BrowserRouter>
+   <Header/>
+   <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/service" element={<Service/>}/>
+    <Route path="/about" element={<About/>} />
+   </Routes>
+   </BrowserRouter>
+  
   
   )
     }

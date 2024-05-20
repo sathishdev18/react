@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import Imagess from '../components/image'
 
 
 function UseEffect1() {
@@ -29,6 +30,7 @@ function UseEffect1() {
 
     const raise=()=>{
       setcount(count+1)
+      
     }
 
 
@@ -46,6 +48,7 @@ function UseEffect1() {
           return(
             <React.Fragment key={each.id}>
             <li>{each.title}</li>
+            
             </React.Fragment>
           )
         })
