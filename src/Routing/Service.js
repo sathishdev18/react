@@ -6,7 +6,7 @@ function Service() {
 
    
     <>
-     <h1>Service Page</h1>
+     <h1>Service Web</h1>
      
     </>
   )

@@ -3,7 +3,7 @@ import Items from '../components/counter-task/increseproduct'
 function Home() {
   return (
     <>
-    <h1>Home Page</h1>
+    <h1>Home Pagee</h1>
     < Items/>
     
     </>

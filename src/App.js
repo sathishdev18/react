@@ -1,7 +1,8 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./Routing/Home";
 import Service from "./Routing/Service";
-import About from "./Routing/About";
+import About , {Orders,Profile} from "./Routing/About";
+
 
 function Header(){
   return(
@@ -29,7 +30,10 @@ function App() {
    <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/service" element={<Service/>}/>
-    <Route path="/about" element={<About/>} />
+    <Route path="/about" element={<About/>} >
+      <Route path="orders" element={<Orders/>}/>
+      <Route path="profile" element={<Profile/>}/>
+    </Route>
    </Routes>
    </BrowserRouter>
   
