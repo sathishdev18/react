@@ -25,18 +25,20 @@ function App() {
   
 
   return (
+    <>
    <BrowserRouter>
    <Header/>
    <Routes>
     <Route path="/" element={<Home/>}/>
-    <Route path="/service" element={<Service/>}/>
-    <Route path="/about" element={<About/>} >
-      <Route path="orders" element={<Orders/>}/>
+    <Route path="service/:id/:name/:num" element={<Service/>}/>
+    <Route path="about" element={<About/>} >
+      <Route path="orders"  element={<Orders/>}/>
       <Route path="profile" element={<Profile/>}/>
     </Route>
    </Routes>
    </BrowserRouter>
-  
+   
+   </>
   
   )
     }
