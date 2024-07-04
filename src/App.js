@@ -1,16 +1,12 @@
 import React from "react";
-import Classprop from "./ALearn/props/Classprops";
-import Propps from "./ALearn/props/Functionprops";
+import Stss from "./ALearn/props/Classstate";
 
 class App extends React.Component {
   render() {
     return (
       <>
-       <Classprop name={'sathish'} greet={'to react'}>
-        iam childeren
-        <button>Click</button></Classprop>
-        <Propps age="22" text="Functional"/>
-      </>
+      <Stss/>
+       </>
     );
   }
 }
